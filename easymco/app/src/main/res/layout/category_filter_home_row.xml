@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_10sdp">
+
+    <com.easymco.custom.FontRegular
+        android:id="@+id/filter_row_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:textColor="@color/secondary_text_color"
+        android:padding="@dimen/_5sdp"
+        android:textSize="@dimen/body"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/filter_child_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp" />
+
+</LinearLayout>

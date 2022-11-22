@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Theme-->
+    <color name="colorPrimary">#18C318</color>
+    <color name="colorPrimaryDark">#139C13</color>
+    <color name="colorAccent">#1F94C0</color>
+    <color name="back_ground_color">@color/grey_200</color>
+
+    <!--Text color-->
+    <color name="primary_text_color">@color/black</color>
+    <color name="secondary_text_color">@color/material_grey_800</color>
+    <color name="third_level_text_color">@color/material_grey_600</color>
+    <color name="price_color">@color/grey_500</color>
+    <color name="special_price_color">@color/black</color>
+
+    <!--Button color-->
+    <color name="positive_button_color">@color/colorAccent</color>
+    <color name="negative_button_color">@color/third_level_text_color</color>
+
+    <!--Colors-->
+    <color name="black">@android:color/black</color>
+    <color name="white">@android:color/white</color>
+    <color name="red">#f44336</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_500">#9e9e9e</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="grey_600">@color/material_grey_600</color>
+    <color name="grey_800">@color/material_grey_800</color>
+    <color name="text_color">#424242</color>
+    <color name="white_transparent_25">#40FFFFFF</color>
+    <color name="white_transparent_60">#99FFFFFF</color>
+    <color name="transparent_text">#4D000000</color>
+    <color name="black_transparent_0">#00000000</color>
+    <color name="white_transparent">#00ffffff</color>
+    <color name="transparent">#B3000000</color>
+    <color name="orange_500">#FF9800</color>
+    <color name="edit_box_back_ground">#cecece</color>
+
+</resources>

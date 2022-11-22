@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:orientation="vertical">
+
+    <com.easymco.custom.FontRegular
+        android:id="@+id/product_detail_and_description_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@color/white"
+        android:gravity="start|center"
+        android:padding="@dimen/_5sdp"
+        android:textSize="@dimen/sub_heading"
+        android:textColor="@color/primary_text_color"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/layout_l_product_specific_manufacturer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_4sdp"
+        android:orientation="horizontal">
+
+        <com.easymco.custom.FontRegular
+            android:id="@+id/product_detail_and_description_manufacture_title"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="start"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/secondary_text_color"
+            android:text="@string/manufacture"
+            android:textSize="@dimen/body" />
+
+        <com.easymco.custom.FontRegular
+            android:id="@+id/product_detail_and_description_manufacture"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="@drawable/new_text_view_bg"
+            android:textColor="@color/secondary_text_color"
+            android:gravity="start|center"
+            android:padding="@dimen/_5sdp"
+            android:textSize="@dimen/body" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_l_product_specific_stock_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_4sdp"
+        android:orientation="horizontal">
+
+        <com.easymco.custom.FontRegular
+            android:id="@+id/product_detail_and_description_stock_detail_title"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="start"
+            android:textColor="@color/secondary_text_color"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/stock_status"
+            android:textSize="@dimen/body" />
+
+        <com.easymco.custom.FontRegular
+            android:id="@+id/product_detail_and_description_stock_detail"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:background="@drawable/new_text_view_bg"
+            android:gravity="start"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/red"
+            android:textSize="@dimen/body" />
+
+    </LinearLayout>
+
+</LinearLayout>

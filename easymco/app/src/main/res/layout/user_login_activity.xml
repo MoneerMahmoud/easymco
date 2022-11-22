@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.user.Login">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/app_bar"
+                layout="@layout/tool_bar" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_id_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@color/white"
+                card_view:cardCornerRadius="@dimen/_2sdp"
+                card_view:contentPadding="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layout_login_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.easymco.custom.FontBold
+                            android:id="@+id/tv_title_login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/_4sdp"
+                            android:text="@string/title_login"
+                            android:textColor="@color/primary_text_color"
+                            android:textSize="@dimen/title" />
+
+                        <com.easymco.custom.FontRegular
+                            android:id="@+id/tv_login_enter_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero_dp"
+                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                            android:layout_weight="0.5"
+                            android:gravity="start"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/e_mail_address"
+                            android:textColor="@color/secondary_text_color"
+                            android:textSize="@dimen/body" />
+
+
+                        <EditText
+                            android:id="@+id/et_login_enter_email_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_modified_text_state"
+                            android:hint="@string/please_enter_your_email_id"
+                            android:inputType="textEmailAddress"
+                            android:padding="@dimen/_10sdp"
+                            android:textColorHint="@color/third_level_text_color"
+                            android:textSize="@dimen/body" />
+
+                        <com.easymco.custom.FontRegular
+                            android:id="@+id/tv_login_enter_pwd"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/zero_dp"
+                            android:layout_marginTop="@dimen/activity_vertical_margin"
+                            android:layout_weight="0.5"
+                            android:gravity="start"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/password"
+                            android:textColor="@color/secondary_text_color"
+                            android:textSize="@dimen/body" />
+
+                        <EditText
+                            android:id="@+id/et_login_enter_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_text_modified_text_state"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:padding="@dimen/_10sdp"
+                            android:textColorHint="@color/third_level_text_color"
+                            android:textSize="@dimen/body" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_login_show_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_5sdp">
+
+                        <CheckBox
+                            android:id="@+id/c_box_tick_login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+                        <com.easymco.custom.FontRegular
+                            android:id="@+id/tv_show_pwd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="@dimen/_4sdp"
+                            android:text="@string/show_password"
+                            android:textColor="@color/third_level_text_color"
+                            android:textSize="@dimen/body" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_login_pg_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/positive_btn_back_ground"
+                        android:gravity="center"
+                        android:text="@string/title_login"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/body" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_forget_pwd_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:orientation="horizontal">
+
+                        <com.easymco.custom.FontRegular
+                            android:id="@+id/tv_login_pg_forget_pwd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:gravity="start"
+                            android:padding="@dimen/_4sdp"
+                            android:text="@string/forgotten_password_link"
+                            android:textColor="@color/secondary_text_color"
+                            android:textSize="@dimen/body" />
+
+                        <com.easymco.custom.FontRegular
+                            android:id="@+id/tv_login_pg_sign_up"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginStart="@dimen/activity_horizontal_margin"
+                            android:layout_weight="0.5"
+                            android:gravity="start"
+                            android:padding="@dimen/_4sdp"
+                            android:text="@string/sign_up"
+                            android:textColor="@color/secondary_text_color"
+                            android:textSize="@dimen/body" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/splash_screen_progress_bar"
+            layout="@layout/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+</ScrollView>

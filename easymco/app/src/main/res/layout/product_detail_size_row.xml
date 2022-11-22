@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/option_row_holder"
+    android:layout_width="@dimen/_90sdp"
+    android:layout_height="@dimen/_40sdp"
+    android:layout_gravity="center"
+    android:background="@color/grey_200"
+    android:gravity="center">
+
+    <com.easymco.custom.FontRegular
+        android:id="@+id/product_detail_row"
+        android:layout_width="@dimen/_85sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:gravity="center"
+        android:textColor="@color/secondary_text_color"
+        android:textSize="@dimen/body" />
+
+</LinearLayout>

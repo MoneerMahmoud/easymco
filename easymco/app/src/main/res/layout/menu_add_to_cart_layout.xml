@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/cart_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/image"
+        android:padding="@dimen/_10sdp"
+        android:scaleType="center"
+        android:src="@drawable/ic_shopping_cart_white_24dp" />
+
+    <com.easymco.custom.FontRegular
+        android:id="@+id/cart_count_value"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_gravity="end|top"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:background="@drawable/round_button"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/caption" />
+
+</FrameLayout>

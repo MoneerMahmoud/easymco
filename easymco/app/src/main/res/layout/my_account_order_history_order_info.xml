@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/tool_bar" />
+
+    <FrameLayout
+        android:id="@+id/layout_l_order_his_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_80sdp"
+            android:orientation="vertical">
+
+            <com.easymco.custom.FontBold
+                android:id="@+id/tv_order_his_main_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/order_information_page"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/title" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/layout_l_dynamic_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_l_order_his_o_info_actions_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="bottom"
+            android:background="@color/grey_200"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+            <LinearLayout
+                android:id="@+id/layout_l_order_his_o_info_action_shipping"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@color/grey_200"
+                android:orientation="horizontal">
+
+                <com.easymco.custom.FontRegular
+                    android:id="@+id/order_detail_product_shipping_title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start|center"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/sub_heading" />
+
+                <com.easymco.custom.FontRegular
+                    android:id="@+id/order_detail_product_shipping_price"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:gravity="start|center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sub_heading" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_l_order_his_o_info_action_items"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="bottom"
+                android:background="@color/grey_200"
+                android:orientation="horizontal">
+
+                <com.easymco.custom.FontRegular
+                    android:id="@+id/order_detail_product_total_count"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start|center"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/sub_heading" />
+
+                <com.easymco.custom.FontRegular
+                    android:id="@+id/order_detail_product_total_price"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:gravity="start|center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sub_heading" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

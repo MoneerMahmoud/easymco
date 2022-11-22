@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.easymco.custom.FontRegular
+        android:id="@+id/sorting_default"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/grey_600"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/sort_default"
+        android:textColor="@color/white"
+        android:textSize="@dimen/body"
+        android:visibility="gone" />
+
+    <com.easymco.custom.FontRegular
+        android:id="@+id/sorting_name_AZ"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/grey_600"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/sort_name_AZ"
+        android:textColor="@color/white"
+        android:textSize="@dimen/body" />
+
+    <com.easymco.custom.FontRegular
+        android:id="@+id/sorting_name_ZA"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/grey_600"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/sort_name_ZA"
+        android:textColor="@color/white"
+        android:textSize="@dimen/body" />
+
+    <com.easymco.custom.FontRegular
+        android:id="@+id/sorting_price_LH"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/grey_600"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/sort_price_LH"
+        android:textColor="@color/white"
+        android:textSize="@dimen/body" />
+
+    <com.easymco.custom.FontRegular
+        android:id="@+id/sorting_price_HL"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/grey_600"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/sort_price_HL"
+        android:textColor="@color/white"
+        android:textSize="@dimen/body" />
+
+    <com.easymco.custom.FontRegular
+        android:id="@+id/sorting_rating_H"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/grey_600"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/sort_rating_H"
+        android:textColor="@color/white"
+        android:textSize="@dimen/body" />
+
+    <com.easymco.custom.FontRegular
+        android:id="@+id/sorting_rating_L"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/grey_600"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/sort_rating_L"
+        android:textColor="@color/white"
+        android:textSize="@dimen/body" />
+
+    <com.easymco.custom.FontRegular
+        android:id="@+id/sorting_model_AZ"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/grey_600"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/sort_model_AZ"
+        android:textColor="@color/white"
+        android:textSize="@dimen/body" />
+
+    <com.easymco.custom.FontRegular
+        android:id="@+id/sorting_model_ZA"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/grey_600"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/sort_model_ZA"
+        android:textColor="@color/white"
+        android:textSize="@dimen/body" />
+
+</LinearLayout>
+

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_id_chg_pwd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_1sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_1sdp"
+    android:background="@color/white"
+    card_view:cardCornerRadius="@dimen/_2sdp"
+    card_view:contentPadding="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_l_my_order_recycle_order_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.easymco.custom.FontRegular
+                    android:id="@+id/tv_my_order_recycle_order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/tv_order_id"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/body" />
+
+                <com.easymco.custom.FontBold
+                    android:id="@+id/tv_my_order_recycle_order_id_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/body" />
+            </LinearLayout>
+
+            <com.easymco.custom.FontBold
+                android:id="@+id/tv_my_order_recycle_order_status_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:padding="@dimen/_5sdp"
+                android:textAllCaps="true"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/body" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@color/grey_300" />
+
+        <com.easymco.custom.FontRegular
+            android:id="@+id/tv_my_order_recycle_date_add_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/body" />
+
+        <com.easymco.custom.FontRegular
+            android:id="@+id/tv_my_order_recycle_no_of_pro_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/body" />
+
+        <com.easymco.custom.FontRegular
+            android:id="@+id/tv_my_order_recycle_total_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/body" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+

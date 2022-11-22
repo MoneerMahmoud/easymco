@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_200"
+            android:gravity="center"
+            android:paddingTop="@dimen/_3sdp">
+
+            <ImageButton
+                android:id="@+id/check_out_delivery_type_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/round_btn_check_out_success"
+                android:contentDescription="@string/image"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_done_color_primary_24dp" />
+
+            <View
+                android:id="@+id/success_cart"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="2dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@+id/check_out_delivery_type_cart"
+                android:layout_toRightOf="@+id/check_out_delivery_type_cart"
+                android:background="@color/colorPrimary" />
+
+            <ImageButton
+                android:id="@+id/check_out_delivery_type_delivery_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@+id/success_cart"
+                android:layout_toRightOf="@+id/success_cart"
+                android:background="@drawable/round_btn_check_out_success"
+                android:contentDescription="@string/image"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_done_color_primary_24dp" />
+
+            <View
+                android:id="@+id/delivery_info_success"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="2dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@+id/check_out_delivery_type_delivery_detail"
+                android:layout_toRightOf="@+id/check_out_delivery_type_delivery_detail"
+                android:background="@color/colorPrimary" />
+
+            <ImageButton
+                android:id="@+id/delivery_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@+id/delivery_info_success"
+                android:layout_toRightOf="@+id/delivery_info_success"
+                android:background="@drawable/round_btn_check_out_yet_to_process"
+                android:contentDescription="@string/image"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_local_shipping_grey_600_24dp" />
+
+            <View
+                android:id="@+id/delivery_method_yet"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="2dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@+id/delivery_method"
+                android:layout_toRightOf="@+id/delivery_method"
+                android:background="@color/grey_600" />
+
+            <ImageButton
+                android:id="@+id/payment_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@+id/delivery_method_yet"
+                android:layout_toRightOf="@+id/delivery_method_yet"
+                android:background="@drawable/round_btn_check_out_yet_to_process"
+                android:contentDescription="@string/image"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_attach_money_grey_600_24dp" />
+
+            <View
+                android:id="@+id/payment_method_yet"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="2dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@+id/payment_method"
+                android:layout_toRightOf="@+id/payment_method"
+                android:background="@color/grey_600" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@+id/payment_method_yet"
+                android:layout_toRightOf="@+id/payment_method_yet"
+                android:background="@drawable/round_btn_check_out_yet_to_process"
+                android:contentDescription="@string/image"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_playlist_add_check_grey_600_24dp" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.easymco.custom.FontBold
+                        android:id="@+id/shipping_type_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/shipping_type"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="@dimen/sub_heading" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/shipping_type_not_avail_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/change_shipping_adds_for_shipping_options"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="@dimen/caption"
+                        android:visibility="gone"/>
+
+                    <RadioGroup
+                        android:id="@+id/shipping_type_chooser"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_5sdp" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/shipping_type_continue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_gravity="bottom"
+        android:background="@color/positive_button_color"
+        android:text="@string/_continue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/body" />
+</FrameLayout>

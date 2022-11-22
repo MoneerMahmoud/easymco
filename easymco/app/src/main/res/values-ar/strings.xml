@@ -1,0 +1,441 @@
+<resources>
+    <string name="app_name">EasyMarket</string>
+
+    <!--Common-->
+    <string name="back">الى الخلف</string>
+    <string name="_continue">استمر</string>
+    <string name="must_login">يجب عليك تسجيل دخولك!</string>
+    <string name="empty_text">سيتم تظهر نتيجة هنا.</string>
+    <string name="select_minimum_1">كمية من أجل الحد الأدنى</string>
+    <string name="select_minimum_2">غير</string>
+    <string name="enjoy_shopping">التمتع التسوق</string>
+    <string name="subtotal_title">حاصل الجمع</string>
+    <string name="checkout">الدفع</string>
+    <string name="specification">مواصفة</string>
+    <string name="none">"--- لا شيء ---"</string>
+    <string name="please_select_country_first">"--- يرجى تحديد البلد أولا ---"</string>
+    <string name="sign_up_please_select">"--- الرجاء التحديد ---</string>
+    <string name="result_not_found">لم يتم العثور على النتيجة!</string>
+    <string name="try_using_another_keyword">جرب استخدام كلمة رئيسية أخرى.</string>
+    <string name="please_select_language">اختار اللغة</string>
+    <string name="all_products">جميع المنتجات</string>
+    <string name="change_shipping_adds_for_shipping_options">لا توجد خيارات التسليم متوفرة \ n في الموقع المحدد.
+                                                        \ n الرجاء المحاولة باستخدام عنوان آخر.</string>
+
+    <string name="mail_successfully_send">تم إرسال البريد بنجاح</string>
+    <string name="e_mail_id_not_exist">البريد الإلكتروني غير موجود!</string>
+    <string name="pwd_successfully_sent_at_your_email">تم إرسال كلمة المرور بنجاح على بريدك الإلكتروني.</string>
+    <string name="invalid_user_name_or_pwd">خطأ في اسم المستخدم أو كلمة مرور!</string>
+    <string name="successfully_added">أضيف بنجاح</string>
+    <string name="successfully_removed">تمت الإزالة بنجاح</string>
+
+    <string name="cash_on_delivery">الدفع عن الاستلام</string>
+    <string name="items">العناصر</string>
+    <string name="cart_sub_total">المجموع الفرعي</string>
+    <string name="cart_total">مجموع</string>
+
+
+    <!--Error-->
+    <string name="failure">بعض الحقول في عداد المفقودين</string>
+
+    <!--Cart-->
+    <string name="add_to_cart_success">وأضاف المنتج بنجاح.</string>
+    <string name="discount_coupon">كوبون</string>
+    <string name="discount_gift_voucher">قسيمة الهدية</string>
+    <string name="discount_reward_points">نقاط مكافأة</string>
+
+    <!--Home Lists-->
+    <string name="featured">متميز</string>
+    <string name="latest">الوافدين الجدد</string>
+    <string name="special">خاص</string>
+    <string name="view_all">مشاهدة الكل</string>
+    <string name="exclusive">تسوق حسب الفئات</string>
+
+    <!--Home Slider-->
+    <string name="yet_to_build">بعد بناء.</string>
+
+    <!--Filter-->
+    <string name="filter">فلتر</string>
+    <string name="reset">إعادة تعيين</string>
+    <string name="apply">تطبيق</string>
+
+    <!--ImageView Content Provider-->
+    <string name="image">صورة</string>
+
+    <!--Search bar-->
+    <string name="search_pre_text">في ماذا تفكر!</string>
+
+    <!--Network check-->
+    <string name="please_check_your_internet_connection">يرجى التحقق من اتصال!</string>
+    <string name="no_connection">أي اتصال إنترنت</string>
+    <string name="error">عذرا، لقد حدث خطأ ما!</string>
+    <string name="network_slow">شبكة سيئة</string>
+    <string name="try_again">التحقق من اتصالك وحاول مرة أخرى.</string>
+
+    <!--Navigation drawer-->
+    <string name="categories">الفئات</string>
+    <string name="drawer_open">فتح</string>
+    <string name="drawer_close">أغلق</string>
+
+    <!--Category activity-->
+    <string name="sort_category">فئة</string>
+
+    <!--Product sorting order-->
+    <string name="sorting">فرز</string>
+    <string name="sort_default">افتراضي</string>
+    <string name="sort_name_AZ">اسم (A - Z)</string>
+    <string name="sort_name_ZA">اسم (ي - أ)</string>
+    <string name="sort_price_LH">السعر (منخفض> مرتفع)</string>
+    <string name="sort_price_HL">السعر ( متوسط > منخفض )</string>
+    <string name="sort_rating_H">التقييم (أعلى)</string>
+    <string name="sort_rating_L">التقييم (الأقل)</string>
+    <string name="sort_model_AZ">نموذج (A - Z)</string>
+    <string name="sort_model_ZA">نموذج (ي - أ)</string>
+
+    <!--Product Titles-->
+    <string name="price_title">السعر</string>
+    <string name="special_price_title">سعر خاص</string>
+    <string name="add_to_cart">أضف إلى السلة</string>
+    <string name="color">اللون</string>
+    <string name="quantity">كمية</string>
+    <string name="and"> ,</string>
+    <string name="please_select">اختر من فضلك </string>
+    <string name="quantity_check_1">كمية من أجل الحد الأدنى </string>
+    <string name="quantity_check_2"> غير </string>
+    <string name="manufacture">صناعة</string>
+    <string name="stock_status">مخزون</string>
+    <string name="there_is_no_review_for_this_product">لا توجد آراء حاليا حول هذا المنتج.</string>
+    <string name="buy">يشترى</string>
+
+    <!--Menu-->
+    <string name="menu_login">تسجيل الدخول</string>
+    <string name="menu_logout">خروج</string>
+    <string name="menu_register">تسجيل</string>
+    <string name="menu_wish_list">قائمة الرغبات</string>
+    <string name="menu_my_order">حسابي</string>
+    <string name="menu_name">المستعمل</string>
+    <string name="menu_cart">العربة</string>
+
+    <!--Review Writing-->
+    <string name="post">بريد</string>
+    <string name="write_rating">كتابة</string>
+    <string name="review">استعراض</string>
+    <string name="rating">تصنيف</string>
+   <!-- <string name="rating_value">(1 "en dash" 5)</string>-->
+    <string name="enter_name">يرجى إدخال اسم</string>
+    <string name="enter_name_length">يرجى إدخال اسم مع 3 إلى 25 حرفا!</string>
+    <string name="enter_command">يرجى معدل والمراجعة</string>
+    <string name="enter_command_length">الرجاء إدخال أكثر من استعراض 25-100 حرفا!</string>
+    <string name="enter_rating">الرجاء إدخال تصنيف</string>
+    <string name="enter_rating_value">الرجاء إدخال تصنيف بين 1-5</string>
+    <string name="success">مراجعة شارك بنجاح</string>
+    <string name="reviews">استعراض</string>
+    <string name="button_cancel">إلغاء</string>
+
+    <!--Forget password-->
+    <string name="send_email">ارسال البريد</string>
+    <string name="forgot_password_title">هل نسيت كلمة المرور</string>
+
+    <!--WishList-->
+    <string name="wish_list_success">وأضاف بنجاح.</string>
+    <string name="wish_list_removed">إزالة بنجاح.</string>
+
+    <!--User-->
+    <string name="demo">عرض</string>
+    <string name="demo_instruction">(انقر تجريبي دون تسجيل)</string>
+    <string name="title_login">تسجيل الدخول</string>
+    <string name="register">تسجيل</string>
+    <string name="show_password">عرض كلمة المرور</string>
+    <string name="forgotten_password_link">كلمة سر منسية</string>
+    <string name="sign_up">سجل</string>
+    <string name="already_have_ac_login_here">إذا كان لديك حساب، انقر هنا!</string>
+    <string name="first_name">الاسم الاول</string>
+    <string name="last_name">الكنية</string>
+    <string name="e_mail">البريد الإلكتروني</string>
+    <string name="telephone">هاتف</string>
+    <string name="fax">فاكس</string>
+    <string name="company">شركة</string>
+    <string name="address_1">العنوان 1</string>
+    <string name="address_2">العنوان 2</string>
+    <string name="city">مدينة</string>
+    <string name="post_code">الرمز البريدي</string>
+    <string name="country">بلد</string>
+    <string name="region_or_state">المنطقة / الدولة</string>
+    <string name="password">كلمه السر</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="subscribe">الاشتراك</string>
+    <string name="yes">نعم فعلا</string>
+    <string name="no">لا</string>
+    <string name="i_have_agree_privacy_policy">لقد قرأت وأوافق على سياسة الخصوصية</string>
+    <string name="submit">عرض</string>
+    <string name="login_success">دخول ناجح</string>
+
+    <!--User success and error-->
+    <string name="please_enter_valid_email">الرجاء إدخال معرف بريد إلكتروني صحيح</string>
+    <string name="please_enter_your_email_id">الرجاء إدخال اسم المستخدم البريد الالكتروني</string>
+    <string name="please_enter_your_pwd">يرجى إدخال كلمة المرور</string>
+    <string name="no_account_found_for_email">لم يتم العثور مع أن عنوان. البريد الإلكتروني حساب حاول مرة أخرى.</string>
+    <string name="login_failed">فشل تسجيل الدخول. البريد الإلكتروني غير صحيح أو كلمة المرور</string>
+    <string name="reg_error">تسجيل فشل!</string>
+    <string name="reg_error_first_name">يجب أن يكون الاسم الأول بين 1 و 32 حرفا!</string>
+    <string name="reg_error_last_name">يجب أن يكون الاسم الاخير بين 1 و 32 حرفا!</string>
+    <string name="reg_error_email1">لا يظهر عنوان البريد الإلكتروني لتكون صالحة!</string>
+    <string name="reg_error_email2">أدخل عنوان بريد إلكتروني صالح!</string>
+    <string name="reg_error_telephone">يجب أن يكون الهاتف بين 3 و 32 حرفا!</string>
+    <string name="reg_error_address1">عنوان 1 يجب أن يكون بين 3 و 128 حرفا!</string>
+    <string name="reg_error_city">يجب أن تكون المدينة بين 2 و 128 حرفا!</string>
+    <string name="reg_error_postcode">يجب أن يكون الرمز البريدي بين 2 و 10 حرفا!</string>
+    <string name="reg_error_country">يرجى تحديد بلد!</string>
+    <string name="reg_error_region_state">الرجاء اختيار المنطقة / الدولة!</string>
+    <string name="reg_error_pwd">يجب أن تكون كلمة المرور بين 5 و 20 حرفا!</string>
+    <string name="reg_error_confirm_pwd">السر تأكيد كلمة السر لا تتطابق مع كلمة السر!</string>
+    <string name="reg_error_privacy_police">يجب أن توافق على سياسة الخصوصية!</string>
+    <string name="registration_successful">تم التسجيل بنجاح!</string>
+    <string name="registration_successful_sign_up">تم التسجيل بنجاح</string>
+
+    <!--User hint-->
+    <string name="password_star_symbol">************</string>
+    <string name="enter_email_id_and_pwd">أدخل معرف البريد الإلكتروني وكلمة المرور</string>
+    <string name="your_personal_details">تفاصيلك الشخصية</string>
+    <string name="your_address">عنوانك</string>
+    <string name="your_password">كلمة السر خاصتك</string>
+    <string name="news_letter">النشرة الإخبارية</string>
+    <string name="e_mail_address">عنوان البريد الإلكتروني</string>
+    <string name="logging_in">تسجيل الدخول...</string>
+    <string name="loading_please_wait">الرجاء الانتظار...</string>
+
+    <!--Checkout data-->
+    <string name="delivery_shipment_info">شحنة معلومات</string>
+    <string name="delivery_billing_info">معلومات الفواتير</string>
+    <string name="delivery_phone_number">رقم الهاتف</string>
+    <string name="delivery_street_address">عنوان الشارع</string>
+    <string name="delivery_state">حالة</string>
+    <string name="delivery_zip_code">الرمز البريدي</string>
+    <string name="payment_type">نوع الدفع</string>
+    <string name="shipping_type">نوع التوصيل</string>
+    <string name="shipping_address">عنوان الشحن</string>
+    <string name="change_address">تغيير عنوان</string>
+    <string name="change_order">غير الترتيب</string>
+    <string name="place_order">ترتيب مكان</string>
+    <string name="return_to_home">مواصلة التسوق</string>
+    <string name="checkout_bar_delivery_and_billing_detail">تفاصيل التسليم</string>
+    <string name="checkout_bar_delivery_method">طريقة التوصيل</string>
+    <string name="checkout_bar_payment_method">طريقة الدفع او السداد</string>
+    <string name="checkout_bar_confirmation">أكد الطلب</string>
+
+    <!--Order success-->
+    <string name="order_success">تم طلبك بنجاح معالجة!
+يمكنك عرض التاريخ طلبك عن طريق الذهاب إلى صفحة حسابي وبالضغط على التاريخ.
+إذا شرائك لديه تحميل المرتبطة بها، يمكنك الذهاب إلى صفحة التحميل حساب لعرضها.
+يرجى توجيه أي أسئلة لديك لصاحب المحل.
+شكرا للتسوق معنا على الانترنت!</string>
+    <string name="order_success_placed">أمرك وضعها بنجاح!</string>
+    <string name="order_success_processed">تم طلبك بنجاح معالجة!</string>
+    <string name="edit_address">تحرير عنوان</string>
+    <string name="address">عنوان</string>
+
+    <!--My account-->
+    <string name="menu_account">حسابي</string>
+    <string name="menu_order">طلباتي</string>
+    <string name="menu_edit_ac">حساب تحرير</string>
+    <string name="menu_change_pwd">تغيير كلمة السر</string>
+    <string name="menu_modify_adds">تعديل عنوان</string>
+    <string name="menu_order_history">تاريخ الطلب</string>
+    <string name="menu_product_returns">عودة المنتج</string>
+    <string name="menu_transactions">المعاملات</string>
+    <string name="menu_reward_points">نقاط مكافأة</string>
+    <string name="menu_my_wish_list">قائمة امنياتي</string>
+    <string name="tv_return_id">عودة معرف</string>
+    <string name="tv_Status">الحالة</string>
+    <string name="tv_order_date">تاريخ الطلب</string>
+    <string name="tv_reason">سبب</string>
+    <string name="tv_opened">افتتح</string>
+    <string name="tv_action">عمل</string>
+    <string name="tv_return_comments">العودة تعليقات</string>
+    <string name="tv_description">وصف</string>
+    <string name="tv_points">نقاط</string>
+    <string name="tv_amt_usd">مبلغ (USD)</string>
+    <string name="tv_address">عنوان</string>
+    <string name="default_adds">العنوان الافتراضي</string>
+    <string name="my_account_detail">حسابي</string>
+    <string name="search">بحث</string>
+    <string name="my_account_date_added">تاريخ البيانات اضاف</string>
+    <string name="my_account_amt_used">مبلغ (USD)</string>
+    <string name="new_address">العناوين الجديدة</string>
+    <string name="icon_edit">تحرير</string>
+    <string name="icon_delete">حذف</string>
+    <string name="my_account_info_page">معلومات حسابي</string>
+    <string name="change_password_page">تغيير كلمة السر</string>
+    <string name="address_book_page">دفتر عناوين</string>
+    <string name="order_history_page">تاريخ الطلب</string>
+    <string name="reward_points_page">ك نقاط مكافأة</string>
+    <string name="product_returns_page">إرجاع المنتج</string>
+    <string name="your_transactions_page">معاملاتك</string>
+    <string name="newsletter_subscription_page">اشترك في الرسالة الالكترونية</string>
+    <string name="my_wish_list_page">قائمة امنياتي</string>
+    <string name="order_information_page">معلومات الطلب</string>
+    <string name="product_returns_info_page">معلومات المنتج</string>
+    <string name="return_information_page_title1">المعلومات عودة</string>
+    <string name="product_info_and_return_reason_title_2">معلومات حول المنتج وسبب للعودة</string>
+    <string name="current_balance_is">رصيدك الحالي هو: $</string>
+    <string name="transaction_current_default_amt">0.00</string>
+    <string name="u_have_not_previous_order">هل لم تصدر أي أوامر السابقة!</string>
+    <string name="u_have_not_previous_returns">هل لم تصدر أي عوائد السابقة!</string>
+    <string name="total_no_reward_points">عدد نقاط مكافأة الخاص بك هو:</string>
+    <string name="your_reward_points_list_is_empty">قائمة نقاط المكافأة فارغة.</string>
+    <string name="reward_points_default_amt">0</string>
+    <string name="your_wish_list_is_empty">قائمة رغباتك فارغة.</string>
+    <string name="date_added">تم إضافة التاريخ</string>
+    <string name="description">وصف</string>
+    <string name="amount">مبلغ (USD)</string>
+    <string name="please_complete_to_request_rma_number">يرجى ملء النموذج أدناه لطلب عدد الجيش الملكي المغربي.</string>
+    <string name="order_information">معلومات الطلب</string>
+    <string name="order_id">رقم التعريف الخاص بالطلب</string>
+    <string name="order_date">تاريخ الطلب</string>
+    <string name="product_name">اسم المنتج</string>
+    <string name="product_code">كود المنتج</string>
+    <string name="reason_for_return">السبب من أجل العودة</string>
+    <string name="dead_on_arrival">ميتا</string>
+    <string name="faulty_please_supply_details">خلل، يرجى تقديم تفاصيل</string>
+    <string name="account_quantity">كمية:</string>
+    <string name="order_error">خطأ ترتيب</string>
+    <string name="other_please_supply_details">البعض، يرجى تقديم تفاصيل</string>
+    <string name="received_wrong_item">تم استلام الشيئ الخاطأ</string>
+    <string name="product_is_opened">يتم فتح المنتج</string>
+    <string name="faulty_or_other_details">تفاصيل خاطئة أو غيرها</string>
+    <string name="product_info_and_return_reason">معلومات المنتج وسبب للعودة</string>
+    <string name="btn_continue">استمر</string>
+    <string name="btn_view">رأي</string>
+    <string name="tv_order_id">رقم التعريف الخاص بالطلب</string>
+    <string name="tv_date_added">تم إضافة التاريخ</string>
+    <string name="tv_order_status">حالة الطلب</string>
+    <string name="tv_no_of_products">عدد المنتجات</string>
+    <string name="tv_customer">زبون</string>
+    <string name="tv_total">مجموع</string>
+    <string name="tv_order_details">تفاصيل الطلب</string>
+    <string name="tv_pay_method">طريقة الدفع او السداد</string>
+    <string name="tv_ship_method">طريقة الشحن</string>
+    <string name="tv_pay_adds">عنوان الدفع</string>
+    <string name="tv_ship_adds">عنوان الشحن</string>
+    <string name="tv_product_name">اسم المنتج</string>
+    <string name="tv_model">نموذج</string>
+    <string name="tv_quantity">كمية</string>
+    <string name="tv_price">السعر</string>
+    <string name="tv_subtotal">حاصل الجمع</string>
+    <string name="tv_free_ship">الشحن مجانا</string>
+    <string name="tv_flat_ship_rate">شحن بسعر موحد</string>
+    <string name="tv_order_his">تاريخ الطلب</string>
+    <string name="tv_comment">التعليق</string>
+    <string name="tv_order_comments">طلب تعليقات</string>
+    <string name="tv_color">اللون</string>
+    <string name="tv_size">حجم</string>
+    <string name="reg_error_fax">الرجاء إدخال تفاصيل الفاكس!</string>
+    <string name="oh_pr_error_order_id_required">معرف طلب المطلوبة!</string>
+    <string name="oh_pr_error_product_name">يجب أن يكون اسم المنتج أكبر من 3 وأقل من 255 حرفا!</string>
+    <string name="oh_pr_error_product_model">يجب أن يكون نموذج المنتج أكبر من 3 وأقل من 64 حرفا!</string>
+
+
+
+    <string name="adds_successfully_deleted">لقد تم حذف عنوان بنجاح.</string>
+    <string name="edit">تحرير</string>
+    <string name="delete">حذف</string>
+    <string name="account_edit_success">تم تحديث حسابك بنجاح.</string>
+    <string name="already_in_your_account">هذا هو الإدراج حسابك.</string>
+    <string name="fill_required_field">يرجى تعبئة جميع الحقول المطلوبة!</string>
+    <string name="address_update">تم تحديث عنوانك بنجاح.</string>
+    <string name="address_warning">تحذير: يجب أن يكون عنوان واحد على الأقل!</string>
+    <string name="default_address_warning">لا يمكن حذف العنوان الافتراضي الخاص بك!</string>
+    <string name="change_password_success">الرقم السري تغير بنجاح.</string>
+    <string name="empty_order_history">هل لم تصدر أي أوامر السابقة!</string>
+
+    <!--Checkout address edit-->
+    <string name="enter_first_name">الرجاء إدخال اسمك الأول</string>
+    <string name="enter_first_name_length">الرجاء إدخال اسمك الأول مع في 1 إلى 32 حرفا</string>
+    <string name="enter_last_name">يرجى إدخال اسم آخر</string>
+    <string name="enter_last_name_length">الرجاء إدخال اسمك الأخير مع في 1 إلى 32 حرفا</string>
+    <string name="enter_phone_number">يرجى إدخال رقم الهاتف الخاص بك</string>
+    <string name="enter_phone_number_length">يرجى إدخال رقم الهاتف الخاص بك مع في 3 إلى 32 حرفا</string>
+    <string name="enter_company">الرجاء إدخال لشركتك</string>
+    <string name="enter_address">الرجاء إدخال عنوانك</string>
+    <string name="enter_address_length">الرجاء إدخال عنوانك مع في 3 إلى 128 حرفا</string>
+    <string name="enter_city">الرجاء إدخال مدينتك</string>
+    <string name="enter_country">الرجاء إدخال بلدك</string>
+    <string name="enter_state">الرجاء إدخال ولايتك</string>
+    <string name="enter_zip_code">الرجاء إدخال الرمز البريدي الخاص بك</string>
+    <string name="enter_zip_code_length">الرجاء إدخال الرمز البريدي الخاص بك في غضون 1-32 حرفا</string>
+    <string name="success_address">تم تحديث عنوان.</string>
+
+    <!--Recycler Empty view-->
+    <string name="empty_wish_list">قائمة رغباتك فارغة.</string>
+    <string name="empty_cart">تجديد التسوق الخاصة بك فارغ!</string>
+    <string name="empty_filter">مرشح غير متوفرة!</string>
+    <string name="empty_category">فئة فارغ.</string>
+
+    <!--Product specification-->
+    <string name="detail_specification">التفاصيل</string>
+    <string name="description_specification">وصف</string>
+    <string name="reviews_specification">استعراض</string>
+
+    <!--Copy rights-->
+    <string name="copy_rights">حقوق التأليف والنشر EasyMarket © </string>
+
+    <!--Country & language change-->
+    <string name="change_country">بلد</string>
+    <string name="change_language">لغة</string>
+    <string name="english">الإنجليزية</string>
+    <string name="arabic">العربية</string>
+
+    <!--Product quantity error message-->
+    <string name="quantity_error_message">المنتج غير متوفر في الكمية المطلوبة أم لا في الأسهم!</string>
+    <string name="quantity_check_3">كمية من اجل الحد الأقصى ل</string>
+    <string name="explore_more">استكشاف المزيد</string>
+
+    <!--Contact form-->
+    <string name="contact_form">نموذج الاتصال</string>
+    <string name="enquiry">الرسالة</string>
+    <string name="forget_password_email_id">عنوان الايميل</string>
+    <string name="menu_about_us">معلومات عنا</string>
+    <string name="menu_contact_us">اتصل بنا</string>
+    <string name="menu_extra">إضافي</string>
+    <string name="name">اسم</string>
+    <string name="enquiry_error">يجب أن تكون الرسالة بين 10 و 3000 حرفا!</string>
+    <string name="new_search_hint">البحث عن المنتجات والعلامات التجارية وأكثر</string>
+
+    <!--Static content-->
+    <string name="on_time_delivery">التسليم في الوقت المحدد</string>
+    <string name="quality_assure">مضمونة الجودة</string>
+    <string name="best_price">افضل سعر</string>
+    <string name="secure_payment">الدفع المضمون</string>
+
+    <!-- Gift voucher and Coupon code-->
+    <string name="gift_voucher_title">قسيمة الهدية</string>
+    <string name="gift_voucher_data_hint">أدخل رمز قسيمة الهدايا</string>
+    <string name="coupon_apply">تطبيق</string>
+    <string name="coupon_data_hint">أدخل رمز القسيمة</string>
+    <string name="coupon_title">القسيمة</string>
+    <string name="coupon_code_error_title">تحذير!</string>
+    <string name="coupon_code_error_1">1. يرجى تسجيل الدخول ومحاولة</string>
+    <string name="coupon_code_error_2">2. تحقق من رمز القسيمة هو الصحيح</string>
+    <string name="coupon_code_error_3">3. ترتيب مجموع المباريات سمحت قيمة القسيمة</string>
+    <string name="coupon_code_error_4">4. اتصل بنا للحصول على مساعدة</string>
+
+    <!--Reward points-->
+    <string name="reward_points_title_1">نقاط المكافأة الخاصة بك (متاح</string>
+    <string name="reward_points_title_2">)</string>
+    <string name="reward_points_content_1">نقاط للاستخدام (ماكس</string>
+    <string name="reward_points_content_2"> )</string>
+    <string name="reward_points_error">الرجاء إدخال نقطة مكافأة صالحة!</string>
+    <string name="reward_points_max_error">الحد الأقصى لنقطة المكافأة هو</string>
+    <string name="reward_points_max_error_2">نقاط المكافأة المتاحة لديك هي </string>
+
+    <!--Loader-->
+    <string name="please_wait">الرجاء الانتظار...</string>
+
+    <!--Checkout-->
+    <string name="check_out_enter_coupon_code">أدخل رمز القسيمة!</string>
+    <string name="check_out_enter_gift_voucher_code">أدخل رمز قسيمة الهدايا!</string>
+    <string name="check_out_select_any_one">يرجى تحديد أي نوع واحد</string>
+    <string name="wish_list_remove">إزالة</string>
+    <string name="out_of_stock">إنتهى من المخزن!</string>
+
+</resources>

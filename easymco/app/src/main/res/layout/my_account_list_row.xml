@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_2sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_2sdp"
+    android:background="?android:attr/selectableItemBackground"
+    android:paddingBottom="@dimen/_16sdp"
+    android:paddingTop="@dimen/_16sdp"
+    card_view:cardCornerRadius="@dimen/_4sdp"
+    card_view:cardElevation="@dimen/_8sdp"
+    card_view:contentPadding="@dimen/_10sdp">
+
+    <LinearLayout
+        android:id="@+id/layout_l_my_ac_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.easymco.custom.FontBold
+            android:id="@+id/list_item_primary_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/my_account_detail"
+            android:textColor="@color/primary_text_color"
+            android:textSize="@dimen/title" />
+
+        <View
+            android:id="@+id/horizon_rule"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:background="@color/grey_500" />
+
+        <com.easymco.custom.FontRegular
+            android:id="@+id/tv_text_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="@dimen/sub_heading" />
+
+        <com.easymco.custom.FontRegular
+            android:id="@+id/tv_text_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingBottom="@dimen/_6sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="@dimen/sub_heading" />
+
+        <com.easymco.custom.FontRegular
+            android:id="@+id/tv_text_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+           android:paddingBottom="@dimen/_6sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="@dimen/sub_heading" />
+
+        <com.easymco.custom.FontRegular
+            android:id="@+id/tv_text_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingBottom="@dimen/_16sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="@dimen/sub_heading" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

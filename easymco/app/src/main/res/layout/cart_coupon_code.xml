@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/coupon_code_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp">
+
+            <EditText
+                android:id="@+id/coupon_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/coupon_data_hint"
+                android:inputType="text"
+                android:textColor="@color/secondary_text_color"
+                android:textColorHint="@color/third_level_text_color"
+                android:textSize="@dimen/body" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/coupon_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/negative_btn_back_grand"
+            android:gravity="center"
+            android:text="@string/coupon_apply"
+            android:textColor="@color/white"
+            android:textSize="@dimen/body" />
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/coupon_code_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/round_shape_with_grey_600"
+        android:contentDescription="@string/image"
+        android:padding="@dimen/_5sdp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_close_white_18dp" />
+
+</RelativeLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_200"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_3sdp">
+
+            <ImageButton
+                android:id="@+id/check_out_payment_type_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/round_btn_check_out_success"
+                android:contentDescription="@string/image"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_done_color_primary_24dp" />
+
+            <View
+                android:id="@+id/success_cart"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="2dp"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/check_out_payment_type_cart"
+                android:layout_toRightOf="@+id/check_out_payment_type_cart"
+                android:background="@color/colorPrimary" />
+
+            <ImageButton
+                android:id="@+id/check_out_payment_type_delivery_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/success_cart"
+                android:layout_toRightOf="@+id/success_cart"
+                android:background="@drawable/round_btn_check_out_success"
+                android:contentDescription="@string/image"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_done_color_primary_24dp" />
+
+            <View
+                android:id="@+id/success_delivery_information"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="2dp"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/check_out_payment_type_delivery_detail"
+                android:layout_toRightOf="@+id/check_out_payment_type_delivery_detail"
+                android:background="@color/colorPrimary" />
+
+            <ImageButton
+                android:id="@+id/check_out_payment_type_delivery_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/success_delivery_information"
+                android:layout_toRightOf="@+id/success_delivery_information"
+                android:background="@drawable/round_btn_check_out_success"
+                android:contentDescription="@string/image"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_done_color_primary_24dp" />
+
+            <View
+                android:id="@+id/success_delivery_type"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="2dp"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/check_out_payment_type_delivery_type"
+                android:layout_toRightOf="@+id/check_out_payment_type_delivery_type"
+                android:background="@color/colorPrimary" />
+
+            <ImageButton
+                android:id="@+id/payment_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/success_delivery_type"
+                android:layout_toRightOf="@+id/success_delivery_type"
+                android:background="@drawable/round_btn_check_out_yet_to_process"
+                android:contentDescription="@string/image"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_attach_money_grey_600_24dp"
+                android:text="@string/checkout_bar_payment_method"
+                android:textColor="@color/grey_500"
+                android:textSize="@dimen/caption" />
+
+            <View
+                android:id="@+id/payment_method_yet"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="2dp"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/payment_method"
+                android:layout_toRightOf="@+id/payment_method"
+                android:background="@color/grey_600" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/payment_method_yet"
+                android:layout_toRightOf="@+id/payment_method_yet"
+                android:background="@drawable/round_btn_check_out_yet_to_process"
+                android:contentDescription="@string/image"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_playlist_add_check_grey_600_24dp" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <com.easymco.custom.FontBold
+                        android:id="@+id/payment_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/payment_type"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="@dimen/sub_heading" />
+
+                    <RadioGroup
+                        android:id="@+id/payment_type_chooser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp">
+
+                    </RadioGroup>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/payment_type_continue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_gravity="bottom"
+        android:background="@color/positive_button_color"
+        android:text="@string/_continue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/body" />
+</FrameLayout>
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.easymco.custom.FontRegular
+        android:id="@+id/filter_title"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_1sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_1sdp"
+        android:paddingStart="@dimen/_5sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sub_heading" />
+
+</LinearLayout>

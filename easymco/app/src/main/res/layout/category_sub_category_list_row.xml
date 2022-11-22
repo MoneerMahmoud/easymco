@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.easymco.custom.FontRegular
+        android:id="@+id/sub_category_recycler_view_row_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:background="@color/white"
+        android:padding="@dimen/_10sdp"
+        android:textColor="@color/secondary_text_color"
+        android:textSize="@dimen/body" />
+
+</LinearLayout>

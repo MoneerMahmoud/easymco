@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.easymco.custom.FontRegular
+        android:id="@+id/home_category_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:textColor="@color/secondary_text_color"
+        android:textSize="@dimen/body" />
+
+    <ImageView
+        android:id="@+id/home_category_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@color/white"
+        android:contentDescription="@string/image"
+        android:layout_marginLeft="@dimen/_1sdp"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginRight="@dimen/_1sdp"
+        android:layout_marginEnd="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:scaleType="centerInside" />
+</FrameLayout>

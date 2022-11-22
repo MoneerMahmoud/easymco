@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.easymco.custom.FontBold
+        android:id="@+id/main_category_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_44sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:gravity="start|center"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:text="@string/categories"
+        android:textColor="@color/primary_text_color"
+        android:textSize="@dimen/sub_heading" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/custom_expandable_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp" />
+
+</LinearLayout>

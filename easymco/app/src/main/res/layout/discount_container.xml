@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_4sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_300"
+        android:orientation="vertical">
+
+        <com.easymco.custom.FontRegular
+            android:id="@+id/discount_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_0.15sdp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/discount_coupon"
+            android:textAllCaps="true"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="@dimen/body" />
+
+        <com.easymco.custom.FontRegular
+            android:id="@+id/discount_gift_voucher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_0.15sdp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/discount_gift_voucher"
+            android:textAllCaps="true"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="@dimen/body" />
+
+        <com.easymco.custom.FontRegular
+            android:id="@+id/discount_reward_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/discount_reward_points"
+            android:textAllCaps="true"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="@dimen/body" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

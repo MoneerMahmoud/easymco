@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/tool_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/collapsing_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/category_banner"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_150sdp"
+                            android:background="@color/white"
+                            android:contentDescription="@string/image"
+                            android:scaleType="fitXY" />
+
+                        <View
+                            android:id="@+id/sub_category_list_title_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_0.15sdp"
+                            android:layout_gravity="center"
+                            android:background="@color/grey_400"
+                            android:visibility="gone" />
+
+                        <com.easymco.custom.FontBold
+                            android:id="@+id/sub_category_list_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:padding="@dimen/_2sdp"
+                            android:text="@string/explore_more"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/title"
+                            android:visibility="gone" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/sub_category_list_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_1sdp"
+                            android:background="@color/grey_200" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:id="@+id/filter_and_sorting_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:background="@color/white"
+                    android:divider="?android:listDivider"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:showDividers="middle">
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/category_filter"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_filter"
+                        android:drawablePadding="@dimen/_2sdp"
+                        android:drawableStart="@drawable/ic_filter"
+                        android:gravity="start|center"
+                        android:paddingEnd="@dimen/_1sdp"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingRight="@dimen/_1sdp"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="@string/filter"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/sub_heading" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/category_sorting"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_swap_vert_black_24dp"
+                        android:drawablePadding="@dimen/_2sdp"
+                        android:drawableStart="@drawable/ic_swap_vert_black_24dp"
+                        android:gravity="start|center"
+                        android:paddingEnd="@dimen/_1sdp"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:paddingRight="@dimen/_1sdp"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:text="@string/sorting"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/sub_heading" />
+
+                    <ImageView
+                        android:id="@+id/category_type_of_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/ic_view_module_black_24dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_0.15sdp"
+                    android:layout_gravity="center"
+                    android:background="@color/grey_400" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/category_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:background="@color/grey_200" />
+
+            </LinearLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <include
+            android:id="@+id/splash_screen_progress_bar"
+            layout="@layout/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+
+</LinearLayout>
+
+
+
+

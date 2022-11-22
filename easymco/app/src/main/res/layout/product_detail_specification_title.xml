@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_6sdp"
+    android:orientation="vertical">
+
+    <com.easymco.custom.FontBold
+        android:id="@+id/product_detail_value_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="start|center"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/secondary_text_color"
+        android:textSize="@dimen/sub_heading" />
+
+    <View
+        android:id="@+id/spliteliner_product_specification_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_300" />
+</LinearLayout>

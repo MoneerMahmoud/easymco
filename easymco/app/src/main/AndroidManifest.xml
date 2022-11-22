@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution">
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".Application_Context"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashScreen"
+            android:screenOrientation="fullSensor"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Home"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.category.Category_Details"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.NoInternetConnection"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.category.Filter_Activity"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.product.Product_Details"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.user.SignUp"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.user.Login"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.product.ImageFullView"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.Cart"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.Wish_List"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.Search"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.product.Product_Detail_And_Description"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.Network_Error"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.Check_Out"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.account.MyAccountInfo"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.account.AddressBook"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.account.MyAccountMainMenu"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.account.Transactions"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.account.OrderHistory"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.account.OrderHistoryOrderInfo"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.account.RewardPoints"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.account.AddsBook_EditAdds"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize" />
+
+    </application>
+
+
+</manifest>

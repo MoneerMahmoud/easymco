@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.user.SignUp">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/tool_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView_sign_up_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:scrollbars="none">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_id_forgot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/layout_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <com.easymco.custom.FontBold
+                        android:id="@+id/tv_title_sign_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:padding="@dimen/_4sdp"
+                        android:text="@string/sign_up"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="@dimen/title" />
+
+                    <com.easymco.custom.FontMedium
+                        android:id="@+id/tv_return_to_login_pg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/already_have_ac_login_here"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_subtitle_personal_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/your_personal_details"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <View
+                        android:id="@+id/SplitLine_hor1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/grey_400" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_subtitle_1_first_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:drawableEnd="@drawable/ic_action_grade_red_10dp"
+                        android:drawableRight="@drawable/ic_action_grade_red_10dp"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/first_name"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <EditText
+                        android:id="@+id/et_subtitle_1_first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_modified_text_state"
+                        android:hint="@string/first_name"
+                        android:inputType="textPersonName"
+                        android:padding="@dimen/_10sdp"
+                        android:textColorHint="@color/third_level_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_error_s1_first_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/reg_error_first_name"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/caption" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_subtitle_1_last_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:drawableEnd="@drawable/ic_action_grade_red_10dp"
+                        android:drawableRight="@drawable/ic_action_grade_red_10dp"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/last_name"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <EditText
+                        android:id="@+id/et_subtitle_1_last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_modified_text_state"
+                        android:hint="@string/last_name"
+                        android:inputType="textPersonName"
+                        android:padding="@dimen/_10sdp"
+                        android:textColorHint="@color/third_level_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_error_s1_last_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/reg_error_last_name"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/caption" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_subtitle_1_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:drawableEnd="@drawable/ic_action_grade_red_10dp"
+                        android:drawableRight="@drawable/ic_action_grade_red_10dp"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/e_mail"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <EditText
+                        android:id="@+id/et_subtitle_1_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_modified_text_state"
+                        android:hint="@string/e_mail"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/_10sdp"
+                        android:textColorHint="@color/third_level_text_color"
+                        android:textSize="@dimen/body" />
+
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_error_s1_email1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/reg_error_email1"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/caption" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_error_s1_email2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/reg_error_email2"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/caption" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_subtitle_1_telephone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:drawableEnd="@drawable/ic_action_grade_red_10dp"
+                        android:drawableRight="@drawable/ic_action_grade_red_10dp"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/telephone"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <EditText
+                        android:id="@+id/et_subtitle_1_telephone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_modified_text_state"
+                        android:hint="@string/telephone"
+                        android:inputType="phone"
+                        android:padding="@dimen/_10sdp"
+                        android:textColorHint="@color/third_level_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_error_s1_telephone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/reg_error_telephone"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/caption" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_subtitle_1_fax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/fax"
+                        android:textSize="@dimen/body"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/et_subtitle_1_fax"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_modified_text_state"
+                        android:hint="@string/fax"
+                        android:inputType="number"
+                        android:padding="@dimen/_10sdp"
+                        android:textColorHint="@color/grey_400"
+                        android:textSize="@dimen/body"
+                        android:visibility="gone" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_subtitle_your_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero_dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/your_address"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/SplitLine_hor2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/grey_400" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_subtitle_2_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/company"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/et_subtitle_2_company"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_modified_text_state"
+                        android:hint="@string/company"
+                        android:inputType="text"
+                        android:padding="@dimen/_10sdp"
+                        android:textColorHint="@color/grey_400"
+                        android:textSize="@dimen/body"
+                        android:visibility="gone" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_subtitle_2_address1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:drawableEnd="@drawable/ic_action_grade_red_10dp"
+                        android:drawableRight="@drawable/ic_action_grade_red_10dp"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/address_1"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <EditText
+                        android:id="@+id/et_subtitle_2_address1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_modified_text_state"
+                        android:hint="@string/address_1"
+                        android:inputType="text"
+                        android:padding="@dimen/_10sdp"
+                        android:textColorHint="@color/third_level_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_error_s2_address1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/reg_error_address1"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/caption" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_subtitle_2_address2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/address_2"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/et_subtitle_2_address2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_modified_text_state"
+                        android:hint="@string/address_2"
+                        android:inputType="text"
+                        android:padding="@dimen/_10sdp"
+                        android:textColorHint="@color/third_level_text_color"
+                        android:textSize="@dimen/body"
+                        android:visibility="gone" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_subtitle_2_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:drawableEnd="@drawable/ic_action_grade_red_10dp"
+                        android:drawableRight="@drawable/ic_action_grade_red_10dp"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/city"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <EditText
+                        android:id="@+id/et_subtitle_2_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_modified_text_state"
+                        android:hint="@string/city"
+                        android:inputType="text"
+                        android:padding="@dimen/_10sdp"
+                        android:textColorHint="@color/third_level_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_error_s2_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/reg_error_city"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/caption" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_subtitle_2_postcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:drawableEnd="@drawable/ic_action_grade_red_10dp"
+                        android:drawableRight="@drawable/ic_action_grade_red_10dp"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/post_code"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <EditText
+                        android:id="@+id/et_subtitle_2_postcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_modified_text_state"
+                        android:hint="@string/post_code"
+                        android:inputType="number"
+                        android:padding="@dimen/_10sdp"
+                        android:textColorHint="@color/third_level_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_error_s2_postcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/reg_error_postcode"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/caption" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_subtitle_2_country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:drawableEnd="@drawable/ic_action_grade_red_10dp"
+                        android:drawableRight="@drawable/ic_action_grade_red_10dp"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/country"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <Spinner
+                        android:id="@+id/country_spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_38sdp"
+                        android:background="@drawable/spinner_background"
+                        android:padding="@dimen/_8sdp"
+                        android:spinnerMode="dialog"
+                        android:textSize="@dimen/body" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_error_s2_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/reg_error_country"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/caption" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_subtitle_2_region_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:drawableEnd="@drawable/ic_action_grade_red_10dp"
+                        android:drawableRight="@drawable/ic_action_grade_red_10dp"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/region_or_state"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <Spinner
+                        android:id="@+id/region_or_state_spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_38sdp"
+                        android:background="@drawable/spinner_background"
+                        android:padding="@dimen/_8sdp"
+                        android:spinnerMode="dialog"
+                        android:textSize="@dimen/body" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_error_s2_region_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/reg_error_region_state"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/caption" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_subtitle_your_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero_dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/your_password"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <View
+                        android:id="@+id/SplitLine_hor3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/grey_400" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_subtitle_3_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:drawableEnd="@drawable/ic_action_grade_red_10dp"
+                        android:drawableRight="@drawable/ic_action_grade_red_10dp"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/password"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <EditText
+                        android:id="@+id/et_subtitle_3_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_modified_text_state"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/_10sdp"
+                        android:textColorHint="@color/third_level_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_error_s3_pwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/reg_error_pwd"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/caption" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_subtitle_3_confirm_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:drawableEnd="@drawable/ic_action_grade_red_10dp"
+                        android:drawableRight="@drawable/ic_action_grade_red_10dp"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/confirm_password"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <EditText
+                        android:id="@+id/et_subtitle_3_confirm_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_modified_text_state"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/_10sdp"
+                        android:textColorHint="@color/third_level_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_error_s3_confirm_pwd1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/reg_error_pwd"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/caption" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_error_s3_confirm_pwd2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/reg_error_confirm_pwd"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/caption" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_subtitle_newsletter"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero_dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/news_letter"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <View
+                        android:id="@+id/SplitLine_hor4"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/grey_400" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_subtitle_4_subscribe"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/zero_dp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_weight="0.5"
+                        android:gravity="start"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/subscribe"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <RadioGroup
+                        android:id="@+id/sign_up_radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:id="@+id/radio_btn_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginStart="@dimen/activity_horizontal_margin" />
+
+                        <com.easymco.custom.FontRegular
+                            android:id="@+id/tv_subtitle_4_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/yes"
+                            android:textColor="@color/secondary_text_color"
+                            android:textSize="@dimen/body" />
+
+                        <RadioButton
+                            android:id="@+id/radio_btn_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginStart="@dimen/activity_horizontal_margin"
+                            android:checked="true" />
+
+                        <com.easymco.custom.FontRegular
+                            android:id="@+id/tv_subtitle_4_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/no"
+                            android:textColor="@color/secondary_text_color"
+                            android:textSize="@dimen/body" />
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:id="@+id/layout_privacy_policy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/c_box_tick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <com.easymco.custom.FontRegular
+                            android:id="@+id/tv_bottom_privacy_statement"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="start"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/i_have_agree_privacy_policy"
+                            android:textColor="@color/secondary_text_color"
+                            android:textSize="@dimen/body" />
+
+                    </LinearLayout>
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/tv_error_s4_privacy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/reg_error_privacy_police"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/caption" />
+
+                    <Button
+                        android:id="@+id/btn_sign_up_page_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:background="@drawable/positive_btn_back_ground"
+                        android:gravity="center"
+                        android:text="@string/submit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/body" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+
+        <include
+            android:id="@+id/splash_screen_progress_bar"
+            layout="@layout/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+</LinearLayout>

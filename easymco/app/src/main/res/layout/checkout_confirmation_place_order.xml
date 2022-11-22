@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_200"
+                android:gravity="center"
+                android:paddingTop="@dimen/_3sdp">
+
+                <ImageButton
+                    android:id="@+id/check_out_confirm_order_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/round_btn_check_out_success"
+                    android:contentDescription="@string/image"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_done_color_primary_24dp" />
+
+                <View
+                    android:id="@+id/success_cart"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="2dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/check_out_confirm_order_cart"
+                    android:layout_toRightOf="@+id/check_out_confirm_order_cart"
+                    android:background="@color/colorPrimary" />
+
+                <ImageButton
+                    android:id="@+id/check_out_confirm_order_delivery_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@+id/success_cart"
+                    android:layout_toRightOf="@+id/success_cart"
+                    android:background="@drawable/round_btn_check_out_success"
+                    android:contentDescription="@string/image"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_done_color_primary_24dp" />
+
+                <View
+                    android:id="@+id/delivery_information_success"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="2dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@+id/check_out_confirm_order_delivery_detail"
+                    android:layout_toRightOf="@+id/check_out_confirm_order_delivery_detail"
+                    android:background="@color/colorPrimary" />
+
+                <ImageButton
+                    android:id="@+id/check_out_confirm_order_delivery_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@+id/delivery_information_success"
+                    android:layout_toRightOf="@+id/delivery_information_success"
+                    android:background="@drawable/round_btn_check_out_success"
+                    android:contentDescription="@string/image"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_done_color_primary_24dp" />
+
+                <View
+                    android:id="@+id/delivery_method_success"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="2dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@+id/check_out_confirm_order_delivery_type"
+                    android:layout_toRightOf="@+id/check_out_confirm_order_delivery_type"
+                    android:background="@color/colorPrimary" />
+
+                <ImageButton
+                    android:id="@+id/check_out_confirm_order_payment_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/delivery_method_success"
+                    android:layout_toRightOf="@+id/delivery_method_success"
+                    android:background="@drawable/round_btn_check_out_success"
+                    android:contentDescription="@string/image"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_done_color_primary_24dp" />
+
+                <View
+                    android:id="@+id/payment_method_success"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="2dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/check_out_confirm_order_payment_type"
+                    android:layout_toRightOf="@+id/check_out_confirm_order_payment_type"
+                    android:background="@color/colorPrimary" />
+
+                <ImageButton
+                    android:id="@+id/confirm_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@+id/payment_method_success"
+                    android:layout_toRightOf="@+id/payment_method_success"
+                    android:background="@drawable/round_btn_check_out_yet_to_process"
+                    android:contentDescription="@string/image"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_playlist_add_check_grey_600_24dp" />
+
+            </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.easymco.custom.FontBold
+                        android:id="@+id/confirmation_shipping_address_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/shipping_address"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/sub_heading" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/confirmation_shipping_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/confirmation_shipping_product_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp" />
+
+
+           <!-- <android.support.v7.widget.RecyclerView
+                android:id="@+id/confirmation_shipping_purchase_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp" />-->
+
+            <LinearLayout
+                android:id="@+id/confirmation_shipping_purchase_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/confirmation_shipping_product_modification"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@color/grey_800"
+                android:text="@string/change_order"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/confirmation_shipping_place_order"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_gravity="bottom"
+        android:background="@color/positive_button_color"
+        android:text="@string/place_order"
+        android:textColor="@color/white"
+        android:textSize="@dimen/body" />
+</FrameLayout>
+
+

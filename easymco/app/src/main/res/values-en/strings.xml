@@ -1,0 +1,440 @@
+<resources>
+    <string name="app_name">EasyMarket</string>
+
+    <!--Common-->
+    <string name="back">BACK</string>
+    <string name="_continue">Continue</string>
+    <string name="must_login">You must logged in!</string>
+    <string name="empty_text">Result will be appear here.</string>
+    <string name="select_minimum_1">Minimum order amount for </string>
+    <string name="select_minimum_2"> is </string>
+    <string name="enjoy_shopping">Enjoy Shopping</string>
+    <string name="subtotal_title">Sub Total</string>
+    <string name="checkout">CheckOut</string>
+    <string name="specification">Specification</string>
+    <string name="none">"--- None ---"</string>
+    <string name="please_select_country_first">"--- Please select country first ---"</string>
+    <string name="sign_up_please_select">"---Please select---</string>
+    <string name="result_not_found">Result not found!</string>
+    <string name="try_using_another_keyword">Try using another keyword.</string>
+    <string name="please_select_language">Select Language</string>
+    <string name="all_products">All products</string>
+    <string name="change_shipping_adds_for_shipping_options">There is no Delivery Options Available \n at your selected Location.
+                                                        \n Please try with some other address.</string>
+
+    <string name="mail_successfully_send">Mail successfully send</string>
+    <string name="e_mail_id_not_exist">Email not exist!</string>
+    <string name="pwd_successfully_sent_at_your_email">Password successfully sent at your Email.</string>
+    <string name="invalid_user_name_or_pwd">Invalid Username or Password!</string>
+    <string name="successfully_added">Successfully Added</string>
+    <string name="successfully_removed">Successfully Removed</string>
+
+    <string name="cash_on_delivery">Cash On Delivery</string>
+    <string name="items">item(s)</string>
+    <string name="cart_sub_total">Sub Total</string>
+    <string name="cart_total">Total</string>
+
+    <!--Error-->
+    <string name="failure">Some Field missing</string>
+
+    <!--Cart-->
+    <string name="add_to_cart_success">Product successfully added.</string>
+    <string name="discount_coupon">Coupon</string>
+    <string name="discount_gift_voucher">Gift Voucher</string>
+    <string name="discount_reward_points">Reward Points</string>
+
+    <!--Home Lists-->
+    <string name="featured">Featured</string>
+    <string name="latest">New Arrivals</string>
+    <string name="special">Deal of the day</string>
+    <string name="view_all">View all</string>
+    <string name="exclusive">Shop By Categories</string>
+
+    <!--Home Slider-->
+    <string name="yet_to_build">Yet to build.</string>
+
+    <!--Filter-->
+    <string name="filter">Filter</string>
+    <string name="reset">Reset</string>
+    <string name="apply">Apply</string>
+
+    <!--ImageView Content Provider-->
+    <string name="image">Image</string>
+
+    <!--Search bar-->
+    <string name="search_pre_text">Whats on your mind!</string>
+
+    <!--Network check-->
+    <string name="please_check_your_internet_connection">Please check the connection !!</string>
+    <string name="no_connection">No Internet connection</string>
+    <string name="error">Sorry,Something went wrong!!</string>
+    <string name="network_slow">Bad network</string>
+    <string name="try_again">Check your connection.Try again!</string>
+
+    <!--Navigation drawer-->
+    <string name="categories">CATEGORIES</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">close</string>
+
+    <!--Category activity-->
+    <string name="sort_category">Category</string>
+
+    <!--Product sorting order-->
+    <string name="sorting">Sorting</string>
+    <string name="sort_default">Default</string>
+    <string name="sort_name_AZ">Name ( A - Z )</string>
+    <string name="sort_name_ZA">Name ( Z - A )</string>
+    <string name="sort_price_LH">Price ( Low > High )</string>
+    <string name="sort_price_HL">Price ( High > Low )</string>
+    <string name="sort_rating_H">Rating ( Highest )</string>
+    <string name="sort_rating_L">Rating ( Lowest )</string>
+    <string name="sort_model_AZ">Model ( A - Z )</string>
+    <string name="sort_model_ZA">Model ( Z - A )</string>
+
+    <!--Product Titles-->
+    <string name="price_title">Price</string>
+    <string name="special_price_title">Special Price</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="color">Color</string>
+    <string name="quantity">Quantity</string>
+    <string name="and"> and </string>
+    <string name="please_select">Select</string>
+    <string name="quantity_check_1">Minimum order amount for </string>
+    <string name="quantity_check_2"> is </string>
+    <string name="manufacture">Manufacture</string>
+    <string name="stock_status">Stock</string>
+    <string name="there_is_no_review_for_this_product">There are no reviews for this product.</string>
+    <string name="buy">Buy</string>
+
+    <!--Menu-->
+    <string name="menu_login">Login</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_register">Register</string>
+    <string name="menu_wish_list">Wish List</string>
+    <string name="menu_my_order">My Order</string>
+    <string name="menu_name">User</string>
+    <string name="menu_cart">Cart</string>
+
+    <!--Review Writing-->
+    <string name="post">Post</string>
+    <string name="write_rating">Write review</string>
+    <string name="review">Review</string>
+    <string name="rating">Rating</string>
+  <!--  <string name="rating_value">(1 "en dash" 5)</string>-->
+    <string name="enter_name">Please enter the name</string>
+    <string name="enter_name_length">Please enter the name with 3 to 25 characters!</string>
+    <string name="enter_command">Please rate and review</string>
+    <string name="enter_command_length">Please enter the review more than 25 to 100 characters!</string>
+    <string name="enter_rating">Please enter the rating</string>
+    <string name="enter_rating_value">Please enter the rating between 1 to 5</string>
+    <string name="success">Review successfully posted</string>
+    <string name="reviews">reviews</string>
+    <string name="button_cancel">Cancel</string>
+
+    <!--Forget password-->
+    <string name="send_email">SEND EMAIL</string>
+    <string name="forgot_password_title">Forgot password</string>
+
+    <!--WishList-->
+    <string name="wish_list_success">Successfully added.</string>
+    <string name="wish_list_removed">Successfully removed.</string>
+
+    <!--User-->
+    <string name="demo">Demo</string>
+    <string name="demo_instruction">(Click demo for without registration)</string>
+    <string name="title_login">LOGIN</string>
+    <string name="register">Register</string>
+    <string name="show_password">Show Password</string>
+    <string name="forgotten_password_link">Forgotten Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_ac_login_here">If you have an account, Click here!</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="telephone">Telephone</string>
+    <string name="fax">Fax</string>
+    <string name="company">Company</string>
+    <string name="address_1">Address 1</string>
+    <string name="address_2">Address 2</string>
+    <string name="city">  City</string>
+    <string name="post_code">Post Code</string>
+    <string name="country">Country</string>
+    <string name="region_or_state">Region / State</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="i_have_agree_privacy_policy">I have read and agree to the Privacy Policy</string>
+    <string name="submit">Submit</string>
+    <string name="login_success">Login Successful</string>
+
+    <!--User success and error-->
+    <string name="please_enter_valid_email">Please enter a valid email id</string>
+    <string name="please_enter_your_email_id">Please enter your email id</string>
+    <string name="please_enter_your_pwd">Please enter your password</string>
+    <string name="no_account_found_for_email">No account found with that email address.Please try again.</string>
+    <string name="login_failed">Login failed.Invalid email id / password</string>
+    <string name="reg_error">Register failed!</string>
+    <string name="reg_error_first_name">First Name must be between 1 and 32 characters!</string>
+    <string name="reg_error_last_name">Last Name must be between 1 and 32 characters!</string>
+    <string name="reg_error_email1">E-Mail Address does not appear to be valid!</string>
+    <string name="reg_error_email2">Enter valid E-Mail Address!</string>
+    <string name="reg_error_telephone">Telephone must be between 3 and 32 characters!</string>
+    <string name="reg_error_address1">Address 1 must be between 3 and 128 characters!</string>
+    <string name="reg_error_city">City must be between 2 and 128 characters!</string>
+    <string name="reg_error_postcode">Post Code must be between 2 and 10 characters!</string>
+    <string name="reg_error_country">Please select a country!</string>
+    <string name="reg_error_region_state">Please select a region/state!</string>
+    <string name="reg_error_pwd">Password must be between 5 and 20 characters!</string>
+    <string name="reg_error_confirm_pwd">Password Confirmation does not match Password!</string>
+    <string name="reg_error_privacy_police">You must agree to the privacy policy!</string>
+    <string name="registration_successful">Registration Successful !</string>
+    <string name="registration_successful_sign_up">Registration Successful</string>
+
+    <!--User hint-->
+    <string name="password_star_symbol">************</string>
+    <string name="enter_email_id_and_pwd">Enter email id and password</string>
+    <string name="your_personal_details">Your Personal Details</string>
+    <string name="your_address">Your Address</string>
+    <string name="your_password">Your Password</string>
+    <string name="news_letter">Newsletter</string>
+    <string name="e_mail_address">E-Mail Address</string>
+	<string name="logging_in">Logging in...</string>
+    <string name="loading_please_wait">Loading please wait...</string>
+
+    <!--Checkout data-->
+    <string name="delivery_shipment_info">Shipment Info</string>
+    <string name="delivery_billing_info">Billing Info</string>
+    <string name="delivery_phone_number">Phone number</string>
+    <string name="delivery_street_address">Street address</string>
+    <string name="delivery_state">State</string>
+    <string name="delivery_zip_code">Zip Code</string>
+    <string name="payment_type">Payment type</string>
+    <string name="shipping_type">Delivery type</string>
+    <string name="shipping_address">Shipping address</string>
+    <string name="change_address">Change address</string>
+    <string name="change_order">Change order</string>
+    <string name="place_order">Place Order</string>
+    <string name="return_to_home">Continue shopping</string>
+    <string name="checkout_bar_delivery_and_billing_detail">Delivery detail</string>
+    <string name="checkout_bar_delivery_method">Delivery method</string>
+    <string name="checkout_bar_payment_method">Payment method</string>
+    <string name="checkout_bar_confirmation">Confirm order</string>
+
+    <!--Order success-->
+    <string name="order_success">Your order has been successfully processed.
+You can view your order history by going to the my account page and by clicking on history.
+If your purchase has an associated download, you can go to the account downloads page to view them.
+Please direct any questions you have to the store owner.
+Thanks for shopping with us online!</string>
+    <string name="order_success_placed">YOUR ORDER SUCCESSFULLY PLACED!</string>
+    <string name="order_success_processed">Your order has been successfully processed!</string>
+    <string name="edit_address">Edit Address</string>
+    <string name="address">Address</string>
+
+    <!--My account-->
+	 <string name="menu_account">My Account</string>
+    <string name="menu_order">My Orders</string>
+    <string name="menu_edit_ac">Edit Account</string>
+    <string name="menu_change_pwd">Change Password</string>
+    <string name="menu_modify_adds">Modify Address</string>
+    <string name="menu_order_history">Order History</string>
+    <string name="menu_product_returns">Product Returns</string>
+    <string name="menu_transactions">Transactions</string>
+    <string name="menu_reward_points">Reward Points</string>
+    <string name="menu_my_wish_list">My Wish List</string>
+    <string name="tv_return_id">Return ID</string>
+    <string name="tv_Status">Status</string>
+    <string name="tv_order_date">Order Date</string>
+    <string name="tv_reason">Reason</string>
+    <string name="tv_opened">Opened</string>
+    <string name="tv_action">Action</string>
+    <string name="tv_return_comments">Return Comments</string>
+    <string name="tv_description">Description</string>
+    <string name="tv_points">Points</string>
+    <string name="tv_amt_usd">Amt(USD)</string>
+    <string name="tv_address">Address</string>
+    <string name="default_adds">Default Address</string>
+    <string name="my_account_detail">MY ACCOUNT</string>
+    <string name="search">Search</string>
+    <string name="my_account_date_added">Date Added Data</string>
+    <string name="my_account_amt_used">Amt(usd) Data</string>
+    <string name="new_address">New Address</string>
+    <string name="icon_edit">Edit</string>
+    <string name="icon_delete">Delete</string>
+    <string name="my_account_info_page">MY ACCOUNT INFORMATION</string>
+    <string name="change_password_page">CHANGE PASSWORD</string>
+    <string name="address_book_page">ADDRESS BOOK</string>
+    <string name="order_history_page">ORDER HISTORY</string>
+    <string name="reward_points_page">YOUR REWARD POINTS</string>
+    <string name="product_returns_page">PRODUCT RETURNS</string>
+    <string name="your_transactions_page">YOUR TRANSACTIONS</string>
+    <string name="newsletter_subscription_page">NEWSLETTER SUBSCRIPTION</string>
+    <string name="my_wish_list_page">MY WISH LIST</string>
+    <string name="order_information_page">ORDER INFORMATION</string>
+    <string name="product_returns_info_page">PRODUCT INFORMATION</string>
+    <string name="return_information_page_title1">RETURN INFORMATION</string>
+    <string name="product_info_and_return_reason_title_2">PRODUCT INFORMATION AND REASON FOR RETURN</string>
+    <string name="current_balance_is">Your current balance is: $</string>
+    <string name="transaction_current_default_amt">0.00</string>
+    <string name="u_have_not_previous_order">You have not made any previous orders!</string>
+    <string name="u_have_not_previous_returns">You have not made any previous returns!</string>
+    <string name="total_no_reward_points">Your total number of reward Points is:</string>
+    <string name="your_reward_points_list_is_empty">Your reward points list is empty.</string>
+    <string name="reward_points_default_amt">0</string>
+    <string name="your_wish_list_is_empty">Your wish list is empty.</string>
+    <string name="date_added">Date Added</string>
+    <string name="description">Description</string>
+    <string name="amount">Amount(USD)</string>
+    <string name="please_complete_to_request_rma_number">Please complete the form below to request an RMA number.</string>
+    <string name="order_information">Order Information</string>
+    <string name="order_id">Order ID</string>
+    <string name="order_date">Order Date</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_code">Product Code</string>
+    <string name="reason_for_return">Reason for Return</string>
+    <string name="dead_on_arrival">Dead On Arrival</string>
+    <string name="faulty_please_supply_details">Faulty, please supply details</string>
+    <string name="order_error">Order Error</string>
+    <string name="other_please_supply_details">Other, please supply details</string>
+    <string name="received_wrong_item">Received Wrong item</string>
+    <string name="product_is_opened">Product is opened</string>
+    <string name="faulty_or_other_details">Faulty or other details</string>
+    <string name="product_info_and_return_reason">Product Information And Reason For Return</string>
+    <string name="btn_continue">CONTINUE</string>
+    <string name="btn_view">View</string>
+    <string name="tv_order_id">Order ID</string>
+    <string name="tv_date_added">Date Added</string>
+    <string name="tv_order_status">Order Status</string>
+    <string name="tv_no_of_products">No.Of Products</string>
+    <string name="tv_customer">Customer</string>
+    <string name="tv_total">Total</string>
+    <string name="tv_order_details">Order Details</string>
+    <string name="tv_pay_method">Payment Method</string>
+    <string name="tv_ship_method">Shipping Method</string>
+    <string name="tv_pay_adds">Payment Address</string>
+    <string name="tv_ship_adds">Shipping Address</string>
+    <string name="tv_product_name">Product Name</string>
+    <string name="tv_model">Model</string>
+    <string name="tv_quantity">Quantity</string>
+    <string name="tv_price">Price</string>
+    <string name="tv_subtotal">Sub-Total</string>
+    <string name="tv_free_ship">Free Shipping</string>
+    <string name="tv_flat_ship_rate">Flat Shipping Rate</string>
+    <string name="tv_order_his">Order History</string>
+    <string name="tv_comment">Comment</string>
+    <string name="tv_order_comments">Order Comments</string>
+    <string name="tv_color">Color</string>
+    <string name="tv_size">Size</string>
+    <string name="reg_error_fax">Please enter the fax details!</string>
+    <string name="oh_pr_error_order_id_required">Order ID required!</string>
+    <string name="oh_pr_error_product_name">Product Name must be greater than 3 and less than 255 characters!</string>
+    <string name="oh_pr_error_product_model">Product Model must be greater than 3 and less than 64 characters!</string>
+
+    <string name="adds_successfully_deleted">Your address has been successfully deleted.</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="account_quantity">Quantity:</string>
+    <string name="account_edit_success">Your account has been successfully updated.</string>
+    <string name="already_in_your_account">This is your account listing.</string>
+    <string name="fill_required_field">Please fill the require fields !</string>
+    <string name="address_update">Your address has been successfully updated.</string>
+    <string name="address_warning">Warning: You must have at least one address!</string>
+    <string name="default_address_warning">Cannot delete your default address!</string>
+    <string name="change_password_success">Password successfully changed.</string>
+    <string name="empty_order_history">You have not made any previous orders!</string>
+
+    <!--Checkout address edit-->
+    <string name="enter_first_name">Please enter your first name</string>
+    <string name="enter_first_name_length">Please enter your first name with in 1 to 32 characters</string>
+    <string name="enter_last_name">Please enter your last name</string>
+    <string name="enter_last_name_length">Please enter your last name with in 1 to 32 characters</string>
+    <string name="enter_phone_number">Please enter your phone number</string>
+    <string name="enter_phone_number_length">Please enter your phone number with in 3 to 32 characters</string>
+    <string name="enter_company">Please enter your company</string>
+    <string name="enter_address">Please enter your address</string>
+    <string name="enter_address_length">Please enter your address with in 3 to 128 characters</string>
+    <string name="enter_city">Please enter your city</string>
+    <string name="enter_country">Please enter your country</string>
+    <string name="enter_state">Please enter your state</string>
+    <string name="enter_zip_code">Please enter your zip_code</string>
+    <string name="enter_zip_code_length">Please enter your zip_code with in 1 to 32 characters</string>
+    <string name="success_address">Address has been updated.</string>
+
+    <!--Recycler Empty view-->
+    <string name="empty_wish_list">Your wish list is empty.</string>
+    <string name="empty_cart">Your shopping cart is empty!</string>
+    <string name="empty_filter">Filter is not available!</string>
+    <string name="empty_category">Category is empty.</string>
+
+    <!--Product specification-->
+    <string name="detail_specification">Detail</string>
+    <string name="description_specification">Description</string>
+    <string name="reviews_specification">Reviews</string>
+
+    <!--Copy rights-->
+    <string name="copy_rights">Copyrights By EasyMarket © </string>
+
+    <!--Country & language change-->
+    <string name="change_country">Country</string>
+    <string name="change_language">Language</string>
+    <string name="english">English</string>
+    <string name="arabic">Arabic</string>
+
+    <!--Product quantity error message-->
+    <string name="quantity_error_message">Product not available in the desired quantity or not in stock!</string>
+    <string name="quantity_check_3">Maximum order amount for</string>
+    <string name="explore_more">Explore more</string>
+
+    <!--Contact form-->
+    <string name="contact_form">Contact form</string>
+    <string name="enquiry">Message</string>
+    <string name="enquiry_error">Message must be between 10 and 3000 characters!</string>
+    <string name="forget_password_email_id">E-mail id</string>
+    <string name="menu_about_us">About us</string>
+    <string name="menu_contact_us">Contact us</string>
+    <string name="menu_extra">Extra</string>
+    <string name="name">Name</string>
+    <string name="new_search_hint">Search for Products, Brands and More</string>
+
+    <!--Static content-->
+    <string name="on_time_delivery">On time Delivery</string>
+    <string name="quality_assure">Quality Assured</string>
+    <string name="best_price">Best Price</string>
+    <string name="secure_payment">Secured Payment</string>
+
+    <!--Gift Voucher-->
+    <string name="gift_voucher_data_hint">Gift voucher code</string>
+    <string name="gift_voucher_title">Gift voucher</string>
+
+    <!--Reward points-->
+    <string name="reward_points_title_1">Your Reward points (Available </string>
+    <string name="reward_points_title_2">)</string>
+    <string name="reward_points_content_1">Points to use (Max</string>
+    <string name="reward_points_content_2"> )</string>
+    <string name="reward_points_error">Please enter valid reward point!</string>
+    <string name="reward_points_max_error">Maximum reward point is</string>
+    <string name="reward_points_max_error_2">Your Available Reward Points is </string>
+
+    <!--Coupon-->
+    <string name="coupon_apply">Apply</string>
+    <string name="coupon_data_hint">Coupon code</string>
+    <string name="coupon_title">Coupon</string>
+    <string name="coupon_code_error_title">Warning!</string>
+    <string name="coupon_code_error_1">1. Please login &amp; try</string>
+    <string name="coupon_code_error_2">2. Verify Coupon Code is correct</string>
+    <string name="coupon_code_error_3">3. Order Total matches allowed Coupon Value</string>
+    <string name="coupon_code_error_4">4. Contact Us for Help</string>
+	
+	<!--Loader-->
+    <string name="please_wait">Please wait...</string>
+	
+	<!--Checkout-->
+    <string name="check_out_enter_coupon_code">Enter coupon code!</string>
+    <string name="check_out_enter_gift_voucher_code">Enter gift voucher code!</string>
+    <string name="check_out_select_any_one">Please select any one type</string>
+    <string name="wish_list_remove">Remove</string>
+    <string name="out_of_stock">Out of Stock!</string>
+
+</resources>

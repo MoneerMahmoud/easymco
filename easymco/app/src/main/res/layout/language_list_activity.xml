@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_165sdp"
+    tools:context=".fragments.LanguageList">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_165sdp"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:background="@color/white">
+        <!-- android:gravity="center_horizontal"
+          android:layout_alignParentTop="true"-->
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_165sdp">
+
+
+            <LinearLayout
+                android:id="@+id/language_group"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_165sdp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_8sdp">
+
+                <com.easymco.custom.FontBold
+                    android:id="@+id/tv_select_language_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:background="@color/positive_button_color"
+                    android:gravity="center"
+                    android:padding="@dimen/_4sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title" />
+
+
+                <com.easymco.custom.FontRegular
+                    android:id="@+id/language_arabic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/arabic"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/sub_heading" />
+
+                <com.easymco.custom.FontRegular
+                    android:id="@+id/language_english"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_4sdp"
+                    android:text="@string/english"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/sub_heading" />
+
+                <Button
+                    android:id="@+id/bt_preferences_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/negative_btn_back_grand"
+                    android:gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    android:text="@string/button_cancel"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/body" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_country_list_progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_165sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/country_list_progress_bar"
+                    layout="@layout/progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/language_closer_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/round_shape_with_grey_600"
+        android:contentDescription="@string/image"
+        android:padding="@dimen/_5sdp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_close_white_18dp" />
+
+
+</RelativeLayout>

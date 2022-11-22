@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.product.Product_Details">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/tool_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/product_detail_image_viewer"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_280sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp" />
+
+                    <LinearLayout
+                        android:id="@+id/home_slider_view_view_pager_button_holder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_5sdp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@color/grey_300" />
+
+                <com.easymco.custom.FontRegular
+                    android:id="@+id/product_detail_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:background="@color/white"
+                    android:padding="@dimen/_4sdp"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/sub_heading" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:orientation="horizontal">
+
+                    <com.easymco.custom.FontBold
+                        android:id="@+id/product_detail_special_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/special_price_color"
+                        android:textSize="@dimen/sub_heading" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/product_detail_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/price_color"
+                        android:textSize="@dimen/body" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@color/grey_300" />
+
+                <LinearLayout
+                    android:id="@+id/rating_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/product_detail_rating_bar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:numStars="5" />
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/product_detail_no_of_rating_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_4sdp"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body" />
+
+                </LinearLayout>
+
+                <com.easymco.custom.FontRegular
+                    android:id="@+id/product_detail_write_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/write_rating"
+                    android:textColor="@color/secondary_text_color"
+                    android:textSize="@dimen/body" />
+
+                <View
+                    android:id="@+id/spliteliner_product_price_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@color/grey_300" />
+
+
+                <LinearLayout
+                    android:id="@+id/product_detail_review_post_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/product_detail_quantity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/quantity"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <EditText
+                        android:id="@+id/product_detail_quantity_valueT"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/quantity"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/spliteliner_product_specification_abow"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@color/grey_300" />
+
+                <com.easymco.custom.FontRegular
+                    android:id="@+id/product_detail_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@color/white"
+                    android:gravity="start|center"
+                    android:paddingEnd="@dimen/_3sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:text="@string/specification"
+                    android:textColor="@color/secondary_text_color"
+                    android:textSize="@dimen/body" />
+
+                <View
+                    android:id="@+id/splite_liner_product_specification_below"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@color/grey_300" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/product_detail_first_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:background="@color/white" />
+
+                <com.easymco.custom.FontRegular
+                    android:id="@+id/product_description_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_3sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:text="@string/description"
+                    android:textColor="@color/secondary_text_color"
+                    android:textSize="@dimen/body" />
+
+                <WebView
+                    android:id="@+id/product_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:padding="@dimen/_10sdp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <include
+            android:id="@+id/splash_screen_progress_bar"
+            layout="@layout/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="bottom"
+            android:background="@color/grey_300"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/product_detail_share"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:background="@color/positive_button_color"
+                android:contentDescription="@string/image"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_share_white_24dp" />
+
+            <ImageButton
+                android:id="@+id/product_detail_add_to_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/grey_300"
+                android:contentDescription="@string/image"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/ic_favorite_grey_500_24dp" />
+
+            <Button
+                android:id="@+id/product_detail_add_to_cart"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/positive_button_color"
+                android:text="@string/add_to_cart"
+                android:textColor="@color/white" />
+
+            <!-- <Button
+                 android:id="@+id/product_detail_buy"
+                 style="?android:attr/buttonBarButtonStyle"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="center"
+                 android:layout_marginEnd="@dimen/_2sdp"
+                 android:layout_marginRight="@dimen/_2sdp"
+                 android:layout_weight="0.30"
+                 android:background="@drawable/buy_back_ground"
+                 android:text="@string/buy"
+                 android:textColor="@color/white" />-->
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
+

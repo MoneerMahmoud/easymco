@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.easymco.custom.FontRegular
+        android:id="@+id/product_detail_color_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@color/white"
+        android:gravity="start|center"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/secondary_text_color"
+        android:textSize="@dimen/body" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/product_detail_spinner_listing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.easymco.custom.FontRegular
+        android:id="@+id/product_detail_spinner_listing_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/product_option_view"
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:padding="@dimen/_4sdp"
+        android:textColor="@color/secondary_text_color" />
+
+</LinearLayout>

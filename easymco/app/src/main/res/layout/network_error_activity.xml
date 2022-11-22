@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:theme="@style/AppTheme.Base"
+    tools:context=".activity.Network_Error">
+
+    <ImageView
+        android:id="@+id/two_g_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/image"
+        android:scaleType="fitXY"
+        android:src="@drawable/slow_network" />
+
+</LinearLayout>

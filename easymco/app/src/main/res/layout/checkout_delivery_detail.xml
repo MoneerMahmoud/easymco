@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_50sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_200"
+                android:gravity="center"
+                android:paddingTop="@dimen/_3sdp">
+
+                <ImageButton
+                    android:id="@+id/check_out_delivery_detail_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/round_btn_check_out_success"
+                    android:contentDescription="@string/image"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_done_color_primary_24dp" />
+
+                <View
+                    android:id="@+id/success_cart"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="2dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@+id/check_out_delivery_detail_cart"
+                    android:layout_toRightOf="@+id/check_out_delivery_detail_cart"
+                    android:background="@color/colorPrimary" />
+
+                <ImageButton
+                    android:id="@+id/delivery_information"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@+id/success_cart"
+                    android:layout_toRightOf="@+id/success_cart"
+                    android:background="@drawable/round_btn_check_out_yet_to_process"
+                    android:contentDescription="@string/image"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_dvr_grey_600_24dp" />
+
+                <View
+                    android:id="@+id/delivery_yet"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="2dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@+id/delivery_information"
+                    android:layout_toRightOf="@+id/delivery_information"
+                    android:background="@color/grey_600" />
+
+                <ImageButton
+                    android:id="@+id/delivery_method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/delivery_yet"
+                    android:layout_toRightOf="@+id/delivery_yet"
+                    android:background="@drawable/round_btn_check_out_yet_to_process"
+                    android:contentDescription="@string/image"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_local_shipping_grey_600_24dp" />
+
+                <View
+                    android:id="@+id/delivery_method_yet"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="2dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/delivery_method"
+                    android:layout_toRightOf="@+id/delivery_method"
+                    android:background="@color/grey_600" />
+
+                <ImageButton
+                    android:id="@+id/payment_method"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/delivery_method_yet"
+                    android:layout_toRightOf="@+id/delivery_method_yet"
+                    android:background="@drawable/round_btn_check_out_yet_to_process"
+                    android:contentDescription="@string/image"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_attach_money_grey_600_24dp" />
+
+                <View
+                    android:id="@+id/payment_method_yet"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="2dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/payment_method"
+                    android:layout_toRightOf="@+id/payment_method"
+                    android:background="@color/grey_600" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/payment_method_yet"
+                    android:layout_toRightOf="@+id/payment_method_yet"
+                    android:background="@drawable/round_btn_check_out_yet_to_process"
+                    android:contentDescription="@string/image"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_playlist_add_check_grey_600_24dp" />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.easymco.custom.FontBold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/delivery_shipment_info"
+                            android:textColor="@color/primary_text_color"
+                            android:textSize="@dimen/sub_heading" />
+
+                        <ImageButton
+                            android:id="@+id/confirmation_shipping_address_change"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:contentDescription="@string/image"
+                            android:padding="@dimen/_7sdp"
+                            android:src="@drawable/ic_mode_edit_grey_500_18dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:orientation="horizontal">
+
+                        <com.easymco.custom.FontRegular
+                            android:id="@+id/shipment_first_name"
+                            android:layout_width="@dimen/zero_dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@color/edit_box_back_ground"
+                            android:ems="10"
+                            android:gravity="start|center"
+                            android:lines="1"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/secondary_text_color"
+                            android:textSize="@dimen/body" />
+
+                        <com.easymco.custom.FontRegular
+                            android:id="@+id/shipment_last_name"
+                            android:layout_width="@dimen/zero_dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@color/edit_box_back_ground"
+                            android:ems="10"
+                            android:gravity="start|center"
+                            android:lines="1"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/secondary_text_color"
+                            android:textSize="@dimen/body" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:orientation="horizontal">
+
+                        <com.easymco.custom.FontRegular
+                            android:id="@+id/shipment_phone_number"
+                            android:layout_width="@dimen/zero_dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@color/edit_box_back_ground"
+                            android:ems="10"
+                            android:gravity="start|center"
+                            android:lines="1"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/secondary_text_color"
+                            android:textSize="@dimen/body" />
+
+                        <com.easymco.custom.FontRegular
+                            android:id="@+id/shipment_company"
+                            android:layout_width="@dimen/zero_dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@color/edit_box_back_ground"
+                            android:gravity="start|center"
+                            android:lines="1"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/secondary_text_color"
+                            android:textSize="@dimen/body"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <com.easymco.custom.FontRegular
+                        android:id="@+id/shipment_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="end"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@color/edit_box_back_ground"
+                        android:ems="10"
+                        android:gravity="start|center"
+                        android:lines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="@dimen/body" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:orientation="horizontal">
+
+                        <com.easymco.custom.FontRegular
+                            android:id="@+id/shipment_city"
+                            android:layout_width="@dimen/zero_dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@color/edit_box_back_ground"
+                            android:gravity="start|center"
+                            android:lines="1"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/secondary_text_color"
+                            android:textSize="@dimen/body" />
+
+                        <com.easymco.custom.FontRegular
+                            android:id="@+id/shipment_zip_code"
+                            android:layout_width="@dimen/zero_dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@color/edit_box_back_ground"
+                            android:ems="10"
+                            android:gravity="start|center"
+                            android:lines="1"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/secondary_text_color"
+                            android:textSize="@dimen/body" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:orientation="horizontal">
+
+                        <com.easymco.custom.FontRegular
+                            android:id="@+id/shipment_state"
+                            android:layout_width="@dimen/zero_dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@color/edit_box_back_ground"
+                            android:lines="1"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/secondary_text_color"
+                            android:textSize="@dimen/body" />
+
+                        <com.easymco.custom.FontRegular
+                            android:id="@+id/shipment_country"
+                            android:layout_width="@dimen/zero_dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:background="@color/edit_box_back_ground"
+                            android:lines="1"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/secondary_text_color"
+                            android:textSize="@dimen/body" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/delivery_continue_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_gravity="bottom"
+        android:background="@color/positive_button_color"
+        android:text="@string/_continue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/body" />
+</FrameLayout>

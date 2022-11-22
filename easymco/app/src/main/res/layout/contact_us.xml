@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:layout_marginRight="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:background="@color/white"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+            <com.easymco.custom.FontBold
+                android:id="@+id/contact_form_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_form"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/title" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/contact_form_first_name_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp">
+
+                <EditText
+                    android:id="@+id/contact_form_first_name_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/secondary_text_color"
+                    android:textColorHint="@color/third_level_text_color"
+                    android:textSize="@dimen/body" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/contact_form_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp">
+
+                <EditText
+                    android:id="@+id/contact_form_email_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/forget_password_email_id"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/secondary_text_color"
+                    android:textColorHint="@color/third_level_text_color"
+                    android:textSize="@dimen/body" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/contact_form_telephone_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp">
+
+                <EditText
+                    android:id="@+id/contact_form_telephone_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/telephone"
+                    android:inputType="phone"
+                    android:textColor="@color/secondary_text_color"
+                    android:textColorHint="@color/third_level_text_color"
+                    android:textSize="@dimen/body" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/contact_form_message_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp">
+
+                <EditText
+                    android:id="@+id/contact_form_message_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/enquiry"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/secondary_text_color"
+                    android:textColorHint="@color/third_level_text_color"
+                    android:textSize="@dimen/body" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/contact_form_submit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:background="@drawable/positive_btn_back_ground"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/body" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/navigation_drawer_about_us_closer_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/round_shape_with_grey_600"
+        android:contentDescription="@string/image"
+        android:padding="@dimen/_5sdp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_close_white_18dp" />
+</RelativeLayout>
